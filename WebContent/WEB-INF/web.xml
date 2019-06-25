@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	
+	<servlet>
+		<servlet-name>nameContinenti</servlet-name>
+		<servlet-class>it.objectmethod.worldmap.servlet.ContinentiServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>nameContinenti</servlet-name>
+		<url-pattern>/Continenti</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>nameNazioni</servlet-name>
+		<servlet-class>it.objectmethod.worldmap.servlet.NationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>nameNazioni</servlet-name>
+		<url-pattern>/Nazioni</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>nameCitta</servlet-name>
+		<servlet-class>it.objectmethod.worldmap.servlet.CittaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>nameCitta</servlet-name>
+		<url-pattern>/Citta</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>modCitta</servlet-name>
+		<servlet-class>it.objectmethod.worldmap.servlet.ModificationCityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>modCitta</servlet-name>
+		<url-pattern>/Mod</url-pattern>
+	</servlet-mapping>
+
+</web-app>
